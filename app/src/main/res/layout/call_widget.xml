@@ -1,0 +1,168 @@
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    style="@style/Widget.WidgetApp.AppWidget.Container"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:orientation="horizontal"-->
+<!--    android:theme="@style/Theme.WidgetApp.AppWidgetContainer"-->
+<!--    android:gravity="center_vertical"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical"-->
+<!--    android:gravity="start">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/contactImage"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:contentDescription="" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/NameView"-->
+<!--        android:text="@string/set_contact_first"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/setContact"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="Set contact" />-->
+
+<!--</LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="end"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/audio_call"-->
+<!--            android:id="@+id/networkCall"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/video_call"-->
+<!--            android:id="@+id/videoCall"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+
+
+
+
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.WidgetApp.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:theme="@style/Theme.WidgetApp.AppWidgetContainer"
+    android:layout_height="match_parent">
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:gravity="start">-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/NameView"-->
+    <!--            android:text="@string/set_contact_first"-->
+    <!--            android:textSize="15sp"-->
+    <!--            android:layout_gravity="start"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"/>-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/setContact"-->
+    <!--            android:layout_gravity="start"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:text="Set contact" />-->
+
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="end"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:src="@drawable/audio_call"-->
+    <!--            android:id="@+id/networkCall"/>-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:src="@drawable/video_call"-->
+    <!--            android:id="@+id/videoCall"/>-->
+
+    <!--    </LinearLayout>-->
+
+    <ImageView
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/video_call"
+        android:id="@+id/contactImage"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/NameView"
+        android:text="@string/set_contact_first"
+        android:textSize="15sp"
+        android:layout_below="@+id/contactImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/setContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Set contact"
+        android:layout_below="@+id/NameView"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/audio_call"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/networkCall"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/video_call"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/networkCall"
+        android:id="@+id/videoCall"/>
+
+
+
+
+</RelativeLayout>
